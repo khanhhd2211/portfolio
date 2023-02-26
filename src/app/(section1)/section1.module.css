@@ -1,0 +1,48 @@
+.sec1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.sec1Text {
+  width: 520px;
+}
+
+.sec1Text .mainText {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 140%;
+  margin-bottom: 25px;
+}
+
+.sec1Text .mainText span {
+  color: var(--primary-color);
+}
+
+.sec1Text .descText {
+  font-size: 22px;
+  line-height: 150%;
+}
+
+.wrapSec1Btn {
+  margin-top: 35px;
+}
+
+.sec1Btn {
+  /* background-color: white; */
+  border: 1.5px solid rgba(51, 51, 51, 1);
+  padding: 10px 30px;
+  font-size: 22px;
+  border-radius: 6px;
+}
+
+.sec1Btn2 {
+  background-color: #333333;
+  color: white;
+  margin-left: 40px;
+}

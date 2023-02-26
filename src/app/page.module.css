@@ -1,36 +1,43 @@
 .mainBg {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(106.44deg, #0F52AC 1.14%, #82B7FF 94.26%);
+  background: linear-gradient(106.44deg, #0f52ac 1.14%, #82b7ff 94.26%);
 }
 
 .mainCard {
   width: 90vw;
   height: 90vh;
-  background: 
-  white url('/images/noise.svg');
+  background: white url("/images/noise.svg");
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 20px;
+  position: relative;
 }
 
-.section1Text {
-  width: 420px;
+.topBtn {
+  display: flex;
+  position: absolute;
+  top: 18px;
+  left: 20px;
 }
 
-.mainText {
-  font-size: 46px;
-  font-weight: 600;
-  line-height: 150%;
+.topBtn div {
+  width: 19px;
+  height: 19px;
+  border-radius: 100%;
+  margin-right: 15px;
 }
 
-.mainText span {
-  color: var(--primary-color);
+.topBtn div:nth-child(1) {
+  background-color: #FF5851;
 }
 
-.descText {
-  font-size: 20.18px;
-  line-height: 150%;
+.topBtn div:nth-child(2) {
+  background-color: #FFB639;
+}
+
+.topBtn div:nth-child(3) {
+  background-color: #00C041;
 }
