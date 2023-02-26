@@ -30,7 +30,7 @@
 }
 
 .wrapSec1Btn {
-  margin-top: 35px;
+  margin-top: 45px;
 }
 
 .sec1Btn {
@@ -39,6 +39,7 @@
   padding: 10px 30px;
   font-size: 22px;
   border-radius: 6px;
+  font-weight: 500;
 }
 
 .sec1Btn2 {
