@@ -10,16 +10,16 @@
 
 ul.selection {
   list-style-type: none;
-	user-select: none;
+  user-select: none;
 }
 
 ul.selection li {
   font-size: 23px;
   display: flex;
   width: 200px;
-	cursor: pointer;
+  cursor: pointer;
   padding: 10px 0;
-	position: relative;
+  position: relative;
 }
 
 ul.selection li:not(.choosed) {
@@ -38,29 +38,109 @@ ul.selection div {
   border-radius: 0 0 15px 15px;
   padding-bottom: 30px;
   padding-top: 15px;
-	position: absolute;
+  position: absolute;
 }
 
 ul.selection li.choosed {
   font-weight: bold;
   font-size: 35px;
-	position: relative;
-	border-bottom: 5px solid #333;
-	padding-right: 2px;
-	padding-bottom: 5px;
-	padding-top: 5px;
-	margin-top: 20px;
-	box-sizing: content-box;
+  position: relative;
+  border-bottom: 5px solid #333;
+  padding-right: 2px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-top: 20px;
+  box-sizing: content-box;
 }
 
 ul.selection li.choosed::after {
-	content: "";
-	width: 29px;
-	height: 18px;
-	background-image: url('/images/arrow.svg');
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%) scale(1.2);
-	right: 5px;
+  content: "";
+  width: 29px;
+  height: 18px;
+  background-image: url("/images/arrow.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) scale(1.2);
+  right: 5px;
+}
+
+.slider {
+  display: flex;
+  margin-top: 35px;
+  position: relative;
+}
+
+.card {
+  width: 470px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(51, 51, 51, 1);
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(63, 63, 63, 0.05);
+  overflow: hidden;
+  background-color: white;
+  margin-right: 40px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.cardImg {
+  object-fit: cover;
+  object-position: center;
+  /* background-color: white; */
+  /* height: 225px; */
+}
+
+.card h2 {
+  margin-top: 26px;
+  font-size: 23px;
+  line-height: 150%;
+  margin-left: 23px;
+}
+
+.card p,
+.card .cardSkills {
+  margin-left: 23px;
+}
+
+.card .cardSkills {
+  display: flex;
+}
+
+.card .cardSkills img {
+  margin-right: 10px;
+}
+
+.card p,
+.card i {
+  line-height: 150%;
+  color: #888;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.card .moreInfo {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 32px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.card .moreInfo a {
+  font-size: 21px;
+  /* font-weight: 00; */
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 9px 27px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.card .moreInfo a:hover {
+  background-color: #333;
+  color: white;
 }

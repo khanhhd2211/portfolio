@@ -1,5 +1,9 @@
 import "./globals.css";
-import { gilroy } from "./gilroy";
+import "./(index)/slick.min.css";
+
+// import "slick-carousel/slick/slick-theme.css";
+
+import { gilroy } from "./(index)/gilroy";
 
 export const metadata = {
   title: "Portfolio",

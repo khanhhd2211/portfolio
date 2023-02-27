@@ -9,8 +9,8 @@ export default function Section2() {
       <div className={styles.sec2MainText}>
         I have experience with these tools and technologies 👨‍🔧️
       </div>
-      {/* <SkillList1 className={styles.sec2ImgList} /> */}
-      <SkillList2 className={styles.sec2ImgList} />
+      <SkillList1 className={styles.sec2ImgList} />
+      {/* <SkillList2 className={styles.sec2ImgList} /> */}
     </div>
   );
 }

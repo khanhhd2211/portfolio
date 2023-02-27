@@ -19,3 +19,27 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.slick-arrow {
+  position: absolute;
+  opacity: 0.5;
+  transition: opacity .3s ease-in-out;
+}
+
+.slick-arrow:hover {
+  opacity: 1;
+}
+
+.slick-next {
+  transform: translateY(-50%) rotate(-90deg);
+  right: 15px;
+  top: 50%;
+  cursor: pointer;
+}
+
+.slick-prev {
+  cursor: pointer;
+  left: -45px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+}

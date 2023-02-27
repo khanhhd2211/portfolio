@@ -1,0 +1,80 @@
+.wrapSec4 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
+}
+
+.sec4 .mainText {
+	font-size: 37px;
+	font-weight: bold;
+	line-height: 150%;
+	margin-bottom: 20px;
+}
+
+.sec4 .info {
+	display: flex;
+}
+
+.info input {
+	width: 410px;
+	padding: 13px 12px;
+	font-size: 18px;
+	font-family: unset;
+	background-color: #F9F9F9;
+	box-shadow: none;
+	border: 1px solid rgba(136, 136, 136, 1);
+	border-radius: 6px;
+}
+
+.info > div:first-child {
+	margin-right: 120px;
+}
+
+.info > div > div {
+	font-size: 22px;
+	line-height: 200%;
+}
+
+.message {
+	margin-top: 25px;
+}
+
+.message > div {
+	font-size: 22px;
+	line-height: 200%;
+}
+
+.message textarea {
+	width: 100%;
+	background-color: #F9F9F9;
+	box-shadow: none;
+	border: 1px solid rgba(136, 136, 136, 1);
+	border-radius: 6px;
+	font-size: 18px;
+	font-family: unset;
+	padding: 13px 12px;
+	resize: vertical;
+}
+
+.sec4 button {
+	border: none;
+	background-color: #2465BC;
+	font-family: unset;
+	font-weight: bold;
+	font-size: 27px;
+	color: white;
+	padding: 14px 111px;
+	border-radius: 6px;
+	cursor: pointer;
+	margin-top: 35px;
+}
+
+.sec4 button:hover {
+	background-color: #1f59a4;
+}
+
+.sec4 button:active {
+	background-color: #1d5195;
+}

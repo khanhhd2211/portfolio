@@ -28,6 +28,7 @@
   height: 19px;
   border-radius: 100%;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .topBtn div:nth-child(1) {
@@ -40,6 +41,10 @@
 
 .topBtn div:nth-child(3) {
   background-color: #00c041;
+}
+
+.topBtn div:nth-child(1)::after {
+  content: "";
 }
 
 .navBtn {
