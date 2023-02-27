@@ -1,0 +1,23 @@
+.sec2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.sec2MainText {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 35px;
+  margin-top: 10px;
+}
+
+.sec2ImgList > div {
+  display: flex;
+  justify-content: center;
+}
+
+.sec2ImgList img {
+  margin: 20px;
+}

@@ -1,0 +1,66 @@
+.sec3 {
+  margin-top: 100px;
+  margin-left: 55px;
+}
+
+.sec3Header {
+  font-size: 47px;
+  font-weight: bold;
+}
+
+ul.selection {
+  list-style-type: none;
+	user-select: none;
+}
+
+ul.selection li {
+  font-size: 23px;
+  display: flex;
+  width: 200px;
+	cursor: pointer;
+  padding: 10px 0;
+	position: relative;
+}
+
+ul.selection li:not(.choosed) {
+  justify-content: center;
+  align-items: center;
+}
+
+ul.selection li:not(.choosed):hover {
+  background: rgba(217, 217, 217, 0.2);
+}
+
+ul.selection div {
+  display: inline-block;
+  background-color: white;
+  border: 1px solid #333;
+  border-radius: 0 0 15px 15px;
+  padding-bottom: 30px;
+  padding-top: 15px;
+	position: absolute;
+}
+
+ul.selection li.choosed {
+  font-weight: bold;
+  font-size: 35px;
+	position: relative;
+	border-bottom: 5px solid #333;
+	padding-right: 2px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin-top: 20px;
+	box-sizing: content-box;
+}
+
+ul.selection li.choosed::after {
+	content: "";
+	width: 29px;
+	height: 18px;
+	background-image: url('/images/arrow.svg');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) scale(1.2);
+	right: 5px;
+}
