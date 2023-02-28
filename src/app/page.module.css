@@ -71,12 +71,13 @@
   background-color: #333333;
   bottom: -5px;
   left: 0;
+  transition: transform .3s ease-in-out;
+  transform-origin: left;
 }
 
 .navBtn div:not(.activeNavBtn)::after {
   transform-origin: left;
   transform: scaleX(0);
-  transition: transform .3s ease-in-out;
 }
 
 .navBtn div:not(.activeNavBtn):hover::after {

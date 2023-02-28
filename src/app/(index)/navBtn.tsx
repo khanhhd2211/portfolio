@@ -1,21 +1,23 @@
+"use client"
 import Link from "next/link";
-import * as React from "react";
-import styles from "../Page.module.css";
+import { usePathname } from "next/navigation";
+import styles from "../page.module.css";
 
 export default function NavBtn() {
+  const pathname = usePathname()
   return (
     <div className={styles.navBtn}>
       <Link href="/">
-        <div className={styles.activeNavBtn}>About Me</div>
+        <div className={pathname == '/' ? styles.activeNavBtn : ''}>About Me</div>
       </Link>
       <Link href="/skills">
-        <div>Skills</div>
+        <div className={pathname == '/skills' ? styles.activeNavBtn : ''}>Skills</div>
       </Link>
       <Link href="/projects">
-        <div>Projects</div>
+        <div className={pathname == '/projects' ? styles.activeNavBtn : ''}>Projects</div>
       </Link>
       <Link href="/contact">
-        <div>Contact</div>
+        <div className={pathname == '/contact' ? styles.activeNavBtn : ''}>Contact</div>
       </Link>
     </div>
   );
