@@ -1,6 +1,6 @@
 "use client";
 import { Dispatch, SetStateAction, useRef, useState } from "react";
-import { Category } from "./section3";
+import { Category } from "./categories";
 import styles from "./section3.module.css";
 import useOnClickOutside from "./useOnClickOutside";
 

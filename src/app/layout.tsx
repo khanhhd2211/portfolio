@@ -4,11 +4,11 @@ import "./(index)/slick.min.css";
 import "./globals.css";
 import styles from "./page.module.css";
 
-// import "slick-carousel/slick/slick-theme.css";
-
 import { gilroy } from "./(index)/gilroy";
 import KeypressNav from "./(index)/keypressNav";
+import FramerMotion from "./(index)/motion";
 import OnScrollNav from "./(index)/onScrollNav";
+import HelpPopup from "./(index)/helpPopup";
 
 export const metadata = {
   title: "Portfolio",
@@ -22,21 +22,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={gilroy.className}>
-        <div>
-          <KeypressNav>
-            <OnScrollNav>
-              <div className={styles.mainBg}>
-                <div className={styles.mainCard}>
-                  <Buttons />
-                  <NavBtn />
-                  {children}
+        <body className={gilroy.className}>
+          <HelpPopup/>
+          <div>
+            <KeypressNav>
+              <OnScrollNav>
+                <div className={styles.mainBg}>
+                  <div className={styles.mainCard}>
+                    <Buttons />
+                    <NavBtn />
+                    <FramerMotion>{children}</FramerMotion>
+                  </div>
                 </div>
-              </div>
-            </OnScrollNav>
-          </KeypressNav>
-        </div>
-      </body>
+              </OnScrollNav>
+            </KeypressNav>
+          </div>
+        </body>
     </html>
   );
 }

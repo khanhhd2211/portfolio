@@ -14,13 +14,13 @@
 }
 
 .sec1Text .mainText {
-  font-size: 56px;
+  font-size: 52px;
   font-weight: 600;
   line-height: 140%;
   margin-bottom: 25px;
 }
 
-.sec1Text .mainText span {
+.sec1Text .mainText span.primary {
   color: var(--primary-color);
 }
 
@@ -35,11 +35,15 @@
 
 .sec1Btn {
   /* background-color: white; */
-  border: 1.5px solid rgba(51, 51, 51, 1);
+  border: 2px solid rgba(51, 51, 51, 1);
   padding: 10px 30px;
   font-size: 22px;
   border-radius: 6px;
   font-weight: 500;
+}
+
+.sec1Btn:active {
+  opacity: 0.8;
 }
 
 .sec1Btn2 {

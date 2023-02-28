@@ -8,7 +8,7 @@ export default function KeypressNav({
 }: {
   children: React.ReactNode;
 }) {
-	const routes = ['/', '/skills', '/projects', '/contact']
+	const routes = ['/', '/skills/data', '/skills/dev', '/projects', '/contact']
 	const router = useRouter()
 	const pathname = usePathname()
 
@@ -21,7 +21,7 @@ export default function KeypressNav({
 		} 
 	}
 
-	const keypressHandlerDebounced = debounce(keypressHandler)
+	const keypressHandlerDebounced = debounce(keypressHandler, 150)
 	
 	useEffect(() => {
 		window.addEventListener('keydown', keypressHandlerDebounced)

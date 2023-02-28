@@ -1,8 +1,8 @@
-import * as React from "react";
 import Image from "next/image";
 import myImg from "../../images/me.svg";
-import styles from './section1.module.css'
 import Button from "./buttons";
+import styles from './section1.module.css';
+import TypeWriter from "./TypeWriter";
 
 export default function Section1() {
   return (
@@ -11,12 +11,12 @@ export default function Section1() {
         <div className={styles.mainText}>
           <div>Hi 🙋‍♂️,</div>
           <div>
-            I’m <span>Khanh Hoang</span>,
+            I’m <span className={styles.primary}>Khanh Hoang</span>,
           </div>
-          <div>Fullstack Developer</div>
+          <div><TypeWriter/></div>
         </div>
         <div className={styles.descText}>
-          {`I design and develop experiences that make people's lives simpler through Web and Mobile apps. I work with Figma, HTML5, CSS3, JavaScript, React, ReactNative and Flutter.`}
+          {`I have primarily worked on data analysis, research, and statistical projects. However, I am keen on exploring product design and development projects, specifically those related to website and mobile app development.`}
         </div>
         <div>
           <Button />
@@ -28,3 +28,4 @@ export default function Section1() {
     </div>
   );
 }
+

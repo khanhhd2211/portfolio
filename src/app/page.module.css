@@ -14,6 +14,8 @@
   transform: translate(-50%, -50%);
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0 0 20px #33333333;
+  border: 1px solid #aaa
 }
 
 .topBtn {
@@ -29,6 +31,7 @@
   border-radius: 100%;
   margin-right: 15px;
   cursor: pointer;
+  position: relative;
 }
 
 .topBtn div:nth-child(1) {
@@ -43,8 +46,47 @@
   background-color: #00c041;
 }
 
-.topBtn div:nth-child(1)::after {
+.topBtn div:nth-child(1)::before {
   content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url('/images/red.svg');
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  position: absolute;
+  display: none;
+}
+
+.topBtn div:nth-child(2)::before {
+  content: "";
+  width: 12px;
+  height: 2px;
+  background-image: url('/images/yellow.svg');
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  position: absolute;
+  display: none;
+}
+
+.topBtn div:nth-child(3)::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url('/images/green.svg');
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.75) rotate(90deg);
+  position: absolute;
+  display: none;
+}
+
+.topBtn:hover div::before {
+  display: block;
 }
 
 .navBtn {
