@@ -1,5 +1,8 @@
 import "./globals.css";
 import "./(index)/slick.min.css";
+import Buttons from "./(index)/buttons";
+import NavBtn from "./(index)/navBtn";
+import styles from "./Page.module.css";
 
 // import "slick-carousel/slick/slick-theme.css";
 
@@ -18,7 +21,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={gilroy.className}>
-        <div>{children}</div>
+        <div>
+          <div className={styles.mainBg}>
+            <div className={styles.mainCard}>
+              <Buttons />
+              <NavBtn />
+              {children}
+            </div>
+          </div>
+        </div>
       </body>
     </html>
   );

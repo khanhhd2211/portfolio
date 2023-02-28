@@ -20,25 +20,25 @@ export default function SkillList2({ className }: { className: string }) {
   return (
     <div className={className}>
       <div>
-        <Image src={jsImg} width={135} height={135} alt="Skills" />
-        <Image src={htmlImg} width={135} height={135} alt="Skills" />
-        <Image src={cssImg} width={135} height={135} alt="Skills" />
-        <Image src={reactImg} width={135} height={135} alt="Skills" />
-        <Image src={reactnativeImg} width={135} height={135} alt="Skills" />
+        <Image priority src={jsImg} width={135} height={135} alt="Skills" />
+        <Image priority src={htmlImg} width={135} height={135} alt="Skills" />
+        <Image priority src={cssImg} width={135} height={135} alt="Skills" />
+        <Image priority src={reactImg} width={135} height={135} alt="Skills" />
+        <Image priority src={reactnativeImg} width={135} height={135} alt="Skills" />
       </div>
       <div>
-        <Image src={nextjsImg} width={135} height={135} alt="Skills" />
-        <Image src={firebaseImg} width={135} height={135} alt="Skills" />
-        <Image src={tailwindcssImg} width={135} height={135} alt="Skills" />
-        <Image src={nodejsImg} width={135} height={135} alt="Skills" />
-        <Image src={nestjsImg} width={135} height={135} alt="Skills" />
+        <Image priority src={nextjsImg} width={135} height={135} alt="Skills" />
+        <Image priority src={firebaseImg} width={135} height={135} alt="Skills" />
+        <Image priority src={tailwindcssImg} width={135} height={135} alt="Skills" />
+        <Image priority src={nodejsImg} width={135} height={135} alt="Skills" />
+        <Image priority src={nestjsImg} width={135} height={135} alt="Skills" />
       </div>
       <div>
-        <Image src={figmaImg} width={135} height={135} alt="Skills" />
-        <Image src={dockerImg} width={135} height={135} alt="Skills" />
-        <Image src={mysqlImg} width={135} height={135} alt="Skills" />
-        <Image src={gitImg} width={135} height={135} alt="Skills" />
-        <Image src={githubImg} width={135} height={135} alt="Skills" />
+        <Image priority src={figmaImg} width={135} height={135} alt="Skills" />
+        <Image priority src={dockerImg} width={135} height={135} alt="Skills" />
+        <Image priority src={mysqlImg} width={135} height={135} alt="Skills" />
+        <Image priority src={gitImg} width={135} height={135} alt="Skills" />
+        <Image priority src={githubImg} width={135} height={135} alt="Skills" />
       </div>
     </div>
   );
