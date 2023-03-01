@@ -39,6 +39,14 @@ export const metadata: Metadata = {
       { sizes: "180x180", url: "/logo/apple-icon-180x180.png" },
     ],
   },
+  openGraph: {
+    title: "Khanh Hoang",
+    description:
+      "I have primarily worked on data analysis, research, and statistical projects. However, I am keen on attempting product design and development related to websites and mobile apps.",
+    url: "https://khanhhd.tect",
+    siteName: "Khanh Hoang",
+    images: [{ url: "/images/portfolio_screenshot.png" }],
+  },
 };
 
 export default function RootLayout({
