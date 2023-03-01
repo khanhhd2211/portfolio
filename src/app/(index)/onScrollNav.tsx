@@ -15,11 +15,9 @@ export default function OnScrollNav({
   
   function onScrollHandler(event: WheelEvent) {
     const currentPathIndex = routes.findIndex((path) => path === pathname);
-    console.log(pathname);
-    console.log(currentPathIndex);
-    if (event.deltaY > 0 && currentPathIndex < routes.length - 1) {
+    if (event.deltaY*10 > 0 && currentPathIndex < routes.length - 1) {
       router.push(routes[currentPathIndex + 1]);
-    } else if (event.deltaY < 0 && currentPathIndex > 0) {
+    } else if (event.deltaY*10 < -0 && currentPathIndex > 0) {
       router.push(routes[currentPathIndex - 1]);
     }
   }

@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
 import Card from "./card";
-import { ICard } from "./section3";
+import { ICard } from "./cards";
 import styles from "./section3.module.css";
 import ReactSlider from "react-slick";
 

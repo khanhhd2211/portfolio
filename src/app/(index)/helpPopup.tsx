@@ -2,12 +2,12 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import useOnClickOutside from "../(section3)/useOnClickOutside";
-import mouseScroll from "../../images/mousescroll.svg";
+import updownbtn from "../../images/updownbtn.svg";
 
 export default function HelpPopup() {
   const [popUpShowed, setPopUpShowed] = useState(false);
-	const ref = useRef<any>();
-	useOnClickOutside(ref, () => popUpShowed && setPopUpShowed(false))
+  const ref = useRef<any>();
+  useOnClickOutside(ref, () => popUpShowed && setPopUpShowed(false));
   useEffect(() => {
     const lastPopUpShowed = localStorage.getItem("popUp");
     if (
@@ -23,8 +23,8 @@ export default function HelpPopup() {
   }, []);
   return (
     <div ref={ref} className={`helpPopup${popUpShowed ? " active" : ""}`}>
-      <Image src={mouseScroll} width={17} height={49} alt="mousescroll" />
-      Lăn chuột hoặc ấn phím mũi tên lên xuống để chuyển trang
+      <Image src={updownbtn} width={24} height={48} alt="updownbtn" />
+      Ấn phím mũi tên lên xuống để chuyển trang
     </div>
   );
 }

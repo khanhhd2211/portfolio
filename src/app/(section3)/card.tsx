@@ -8,13 +8,28 @@ interface ICards extends ICard {
   className: string;
 }
 
-export default function Card({ className, name, link, created_at, img, desc, tools, type }: ICards) {
+export default function Card({
+  className,
+  name,
+  link,
+  created_at,
+  img,
+  desc,
+  tools,
+  type,
+}: ICards) {
   return (
     <div className={`${styles.card} ${className}`}>
-      <Image className={styles.cardImg} height={225} width={470} alt="cardimg" src={img}/>
+      <Image
+        className={styles.cardImg}
+        height={225}
+        width={470}
+        alt="cardimg"
+        src={img}
+      />
       <h2>{name}</h2>
       <p>
-        <i>{`Published at: ${created_at.toLocaleDateString('en-GB')}`}</i>
+        <i>{`Published at: ${created_at.toLocaleDateString("en-GB")}`}</i>
       </p>
       <p>{desc}</p>
       <div className={styles.cardSkills}>
@@ -23,7 +38,11 @@ export default function Card({ className, name, link, created_at, img, desc, too
         ))}
       </div>
       <div className={styles.moreInfo}>
-        <Link href={link}>MORE INFO</Link>
+        <Link legacyBehavior passHref href={link}>
+          <a target="_blank" rel="noopener noreferrer">
+            MORE INFO
+          </a>
+        </Link>
       </div>
     </div>
   );
