@@ -24,6 +24,7 @@ export default function Slider({ cards }: ISliderProps) {
     <ReactSlider
       className={styles.slider}
       slidesToShow={cards.length > 3 ? 3 : cards.length}
+      
       {...settings}
     >
       {cards.map((card) => (

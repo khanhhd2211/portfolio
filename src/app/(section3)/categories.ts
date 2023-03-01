@@ -10,14 +10,6 @@ export const categories: Category[] = [
   },
   {
     id: 2,
-    name: "UI Design",
-  },
-  {
-    id: 3,
-    name: "Website",
-  },
-  {
-    id: 4,
-    name: "App",
-  },
+    name: "Web/App",
+  }
 ];

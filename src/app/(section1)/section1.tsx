@@ -16,7 +16,7 @@ export default function Section1() {
           <div><TypeWriter/></div>
         </div>
         <div className={styles.descText}>
-          {`I have primarily worked on data analysis, research, and statistical projects. However, I am keen on exploring product design and development projects, specifically those related to website and mobile app development.`}
+          {`I have primarily worked on data analysis, research, and statistical projects. However, I am keen on attempting product design and development related to websites and mobile apps.`}
         </div>
         <div>
           <Button />
