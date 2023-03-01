@@ -20,16 +20,18 @@ export default function KeypressNav({
       return;
     }
     const currentPathIndex = routes.findIndex((path) => path == pathname);
-    if (
-      (event.key == "ArrowDown" || event.key == "ArrowRight") &&
-      currentPathIndex < routes.length - 1
-    ) {
-      router.push(routes[currentPathIndex + 1]);
-    } else if (
-      (event.key == "ArrowUp" || event.key == "ArrowLeft") &&
-      currentPathIndex > 0
-    ) {
-      router.push(routes[currentPathIndex - 1]);
+    if (event.key == "ArrowDown" || event.key == "ArrowRight") {
+      if (currentPathIndex < routes.length - 1) {
+        router.push(routes[currentPathIndex + 1]);
+      } else {
+        router.push(routes[0]);
+      }
+    } else if (event.key == "ArrowUp" || event.key == "ArrowLeft") {
+      if (currentPathIndex > 0) {
+        router.push(routes[currentPathIndex - 1]);
+      } else {
+        router.push(routes[routes.length - 1]);
+      }
     }
   }
 
