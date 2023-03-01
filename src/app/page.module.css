@@ -96,6 +96,7 @@
   right: 180px;
   top: 35px;
   display: flex;
+  z-index: 999;
 }
 
 .navBtn div {
