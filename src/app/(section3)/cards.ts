@@ -66,7 +66,7 @@ export const cards: ICard[] = [
   },
   {
     id: 6,
-    name: "Video lectures using basic R",
+    name: "R lectures",
     created_at: new Date(),
     img: "https://i.imgur.com/YKTyvOj.png",
     desc: "The basics of the R programming language used in statistics and data analysis",
