@@ -21,7 +21,7 @@ export default function Section4() {
         </div>
         <div className={styles.message}>
           <div> Message</div>
-          <textarea name="message" rows={13} placeholder="Lorem ipsum dolor sit amet consectetur. Eu aliquam..." />
+          <textarea name="message" rows={7} placeholder="Lorem ipsum dolor sit amet consectetur. Eu aliquam..." />
         </div>
         <div className={styles.wrapSubmit}>
           <button type="submit">Send it!</button>

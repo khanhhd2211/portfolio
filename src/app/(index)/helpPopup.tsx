@@ -22,7 +22,11 @@ export default function HelpPopup() {
     }
   }, []);
   return (
-    <div ref={ref} className={`helpPopup${popUpShowed ? " active" : ""}`}>
+    <div
+      style={{ fontSize: "15px" }}
+      ref={ref}
+      className={`helpPopup${popUpShowed ? " active" : ""}`}
+    >
       <Image src={updownbtn} width={24} height={48} alt="updownbtn" />
       Ấn phím mũi tên lên xuống để chuyển trang
     </div>

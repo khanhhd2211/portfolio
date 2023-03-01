@@ -23,7 +23,7 @@ export default function Section1() {
         </div>
       </div>
       <div className={styles.sec1Img}>
-        <Image priority alt="My image" width={428.4} height={476.4} src={myImg} />
+        <Image priority alt="My image" src={myImg} />
       </div>
     </div>
   );

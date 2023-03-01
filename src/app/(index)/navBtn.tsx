@@ -13,14 +13,13 @@ export default function NavBtn() {
         </div>
       </Link>
       <Link href="/skills/data">
-        <div
-          className={
-            pathname == "/skills/data" || pathname == "/skills/dev"
-              ? styles.activeNavBtn
-              : ""
-          }
-        >
-          Skills
+        <div className={pathname == "/skills/data" ? styles.activeNavBtn : ""}>
+          Data
+        </div>
+      </Link>
+      <Link href="/skills/dev">
+        <div className={pathname == "/skills/dev" ? styles.activeNavBtn : ""}>
+          Web/App
         </div>
       </Link>
       <Link href="/projects">

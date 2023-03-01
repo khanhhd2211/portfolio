@@ -22,7 +22,7 @@ export default function Card({
     <div className={`${styles.card} ${className}`}>
       <Image
         className={styles.cardImg}
-        height={225}
+        height={200}
         width={470}
         alt="cardimg"
         src={img}

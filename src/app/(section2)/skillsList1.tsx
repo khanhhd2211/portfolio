@@ -20,24 +20,24 @@ export default function SkillList1({ className }: { className: string }) {
   return (
     <div className={className}>
       <div>
-        <Image priority src={rImg} width={135} height={135} alt="Skills" />
-        <Image priority src={ggplot2Img} width={135} height={135} alt="Skills" />
-        <Image priority src={tidyrImg} width={135} height={135} alt="Skills" />
-        <Image priority src={dplyrImg} width={135} height={135} alt="Skills" />
+        <Image priority src={rImg} width={100} height={100} alt="Skills" />
+        <Image priority src={ggplot2Img} width={100} height={100} alt="Skills" />
+        <Image priority src={tidyrImg} width={100} height={100} alt="Skills" />
+        <Image priority src={dplyrImg} width={100} height={100} alt="Skills" />
       </div>
       <div>
-        <Image priority src={tidyverseImg} width={135} height={135} alt="Skills" />
-        <Image priority src={gganimateImg} width={135} height={135} alt="Skills" />
-        <Image priority src={rvestImg} width={135} height={135} alt="Skills" />
-        <Image priority src={plotlyImg} width={135} height={135} alt="Skills" />
-        <Image priority src={powerbiImg} width={135} height={135} alt="Skills" />
+        <Image priority src={tidyverseImg} width={100} height={100} alt="Skills" />
+        <Image priority src={gganimateImg} width={100} height={100} alt="Skills" />
+        <Image priority src={rvestImg} width={100} height={100} alt="Skills" />
+        <Image priority src={plotlyImg} width={100} height={100} alt="Skills" />
+        <Image priority src={powerbiImg} width={100} height={100} alt="Skills" />
       </div>
       <div>
-        <Image priority src={pythonImg} width={135} height={135} alt="Skills" />
-        <Image priority src={mysqlImg} width={135} height={135} alt="Skills" />
-        <Image priority src={gitImg} width={135} height={135} alt="Skills" />
-        <Image priority src={githubImg} width={135} height={135} alt="Skills" />
-        <Image priority src={markdownImg} width={135} height={135} alt="Skills" />
+        <Image priority src={pythonImg} width={100} height={100} alt="Skills" />
+        <Image priority src={mysqlImg} width={100} height={100} alt="Skills" />
+        <Image priority src={gitImg} width={100} height={100} alt="Skills" />
+        <Image priority src={githubImg} width={100} height={100} alt="Skills" />
+        <Image priority src={markdownImg} width={100} height={100} alt="Skills" />
       </div>
     </div>
   );

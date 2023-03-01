@@ -16,6 +16,7 @@ export default function Slider({ cards }: ISliderProps) {
     dots: false,
     prevArrow: <img src="/images/arrow.svg" />,
     nextArrow: <img src="/images/arrow.svg" />,
+    centerMode: true
     // slidesToScroll: 1,
   };
 
